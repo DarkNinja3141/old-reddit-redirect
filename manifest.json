@@ -1,12 +1,18 @@
 {
   "name": "Old Reddit Redirect",
   "description": "Ensure Reddit always loads the old design",
-  "version": "1.1.4",
+  "version": "2.0.0",
   "manifest_version": 2,
   "background": {"scripts":["background.js"]},
   "icons": {
     "48": "img/icon48.png",
     "128": "img/icon128.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    }
   },
   "permissions": [
     "webRequest",
@@ -14,6 +20,6 @@
     "*://reddit.com/*",
     "*://www.reddit.com/*",
     "*://np.reddit.com/*",
-    "*://new.reddit.com/*"
+    "*://old.reddit.com/*"
   ]
 }
